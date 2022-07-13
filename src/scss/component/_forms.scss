@@ -1,0 +1,87 @@
+.form-control, .form-select {
+    @include border-radius(12px);
+    border: 1px solid rgba($borderColor, .40);
+    height: 60px;
+    @include font-size(20);
+    color: $black;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.form-label {
+    @include font-size(14);
+    font-family: $fontBold;
+    position: relative;
+    padding: 0 10px;
+    top: 12px;
+    left: 15px;
+    &--white {
+        background: $white;
+    }
+    &--gray {
+        background: $bodyBg;
+    }
+    &__dark {
+        padding-bottom: 10px;
+    }
+}
+
+.form-controll {
+    position: relative;
+}
+
+textarea {
+    resize: none;
+}
+
+.form-check-label {
+    @include font-size(15);
+    font-family: $fontReg;
+    color: $gray1;
+    display: inline-block;
+    margin-left: 13px;
+    span {
+        display: block;
+        strong {
+            color: $black;
+        }
+    }
+}
+
+.form-check-input {
+    width: 20px;
+    height: 20px;
+    &:checked {
+        background-color: $black;
+        border-color: $black;
+    }
+    &:focus {
+        box-shadow: 0 0 0 0.25rem rgba($black, 0.25);
+    }
+}
+
+.cart-textarea {
+    height: calc(100% - 30px);
+}
+
+textarea.form-control {
+    font-family: $fontReg;
+    @include font-size(18);
+    padding: 2rem;
+    min-height: 100px;
+}
+
+
+.meter-placeholder {
+    position: relative;
+     &:after {
+        content: "/m";
+        position: absolute;
+        bottom: 22%;
+        color: $gray2;
+        right: 10px;
+        z-index: 999999;
+        @include opacity(.40);
+        @include font-size(18);
+     }
+}
