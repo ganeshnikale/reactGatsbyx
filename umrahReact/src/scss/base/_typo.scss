@@ -83,13 +83,7 @@ p{
     font-size: 1.4rem;
     color: $gray2;
 
-    &.icon-text {
-        background: url('../icons/text_icon.png');
-        background-repeat: no-repeat;
-        background-size: 17px;
-        padding-left: 30px;
-        background-position: 0px 2px;
-    }
+   
 
     &.timestap {
         color: $gray2;
