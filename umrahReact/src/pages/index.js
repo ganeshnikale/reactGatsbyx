@@ -1,30 +1,10 @@
 import * as React from "react"
-import {
-  Nav,
-  Button,
-  Display4,
-  Lead,
-  Container,
-  Row,
-  Col,
-  Card,
-  List,
-  BDiv,
-  BH4,
-  BH5,
-  BSmall,
-  BFooter,
-  BImg,
-  BA
-} from 'bootstrap-4-react';
+import "../scss/style.scss";
+
 
 const IndexPage = () => {
   return (
-    <Container>
-      <Row>
-        <Col >abc</Col>
-      </Row>
-    </Container>
+    <div className="container">222</div>
   )
 }
 
