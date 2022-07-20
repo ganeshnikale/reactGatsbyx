@@ -1,0 +1,34 @@
+[
+  {
+    "destinatio": [
+      {
+        "mumbai": [{
+            "sawwal": [
+                {
+                  "duration": "5days"
+                }
+              ],
+              "kawwal": [
+                {
+                  "duration": "5days"
+                }
+              ]
+      }],
+      "banglore": [{
+        "sawwal": [
+            {
+              "duration": "5days"
+            }
+          ],
+          "kawwal": [
+            {
+              "duration": "5days"
+            }
+          ]
+  }]
+            
+        
+      }
+    ]
+  }
+]
