@@ -23,11 +23,11 @@ const MerchPage = ({ data }) => {
   const merch = data.marchJson
 
   return (
-    <>
+    <Layout>
       <h1>{merch.title}</h1>
       <h2>{merch.price}</h2>
       <Image fluid={merch.image.childImageSharp.fluid} alt={merch.title} />
-    </>
+    </Layout>
   )
 }
 
