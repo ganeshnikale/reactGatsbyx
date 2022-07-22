@@ -45,10 +45,13 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
       }
     }`);
     
+    const destinationComponent = require.resolve('./src/components/destination.js');
+    
     packageDetails.data.allPackagesJson.edges.forEach( el => {
+     
       createPage({
         path: `/packagePage/${el.node.destinatio}`,
-        component: require.resolve('./src/components/destination.js'),
+        component: destinationComponent,
         context: {
           slug: el.node
         }
