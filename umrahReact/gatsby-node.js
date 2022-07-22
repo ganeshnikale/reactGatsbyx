@@ -27,5 +27,38 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
           slug: edge.node.slug,
         },
       })
+    });
+
+    const packageDetails = await graphql(`{
+      allPackagesJson {
+        edges {
+          node {
+            destinatio
+            duration {
+              packageName
+              details {
+                hotelName
+              }
+            }
+          }
+        }
+      }
+    }`);
+    
+    packageDetails.data.allPackagesJson.edges.forEach( el => {
+      createPage({
+        path: `/packagePage/${el.node.destinatio}`,
+        component: require.resolve('./src/components/destination.js'),
+        context: {
+          slug: el.node
+        }
+
+      })
     })
+    
+
   }
+
+
+
+  
