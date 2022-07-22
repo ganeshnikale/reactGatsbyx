@@ -1,34 +1,14 @@
 [
   {
-    "destinatio": [
-      {
-        "mumbai": [{
-            "sawwal": [
-                {
-                  "duration": "5days"
-                }
-              ],
-              "kawwal": [
-                {
-                  "duration": "5days"
-                }
-              ]
-      }],
-      "banglore": [{
-        "sawwal": [
-            {
-              "duration": "5days"
-            }
-          ],
-          "kawwal": [
-            {
-              "duration": "5days"
-            }
-          ]
-  }]
-            
-        
-      }
-    ]
+    "destinatio":"mumbai",
+      "duration": [
+        {"packageName":"awal", "details":[{"hotelName":"asdasd"}]},{"packageName":"sawal","details":[{"hotelName":"asdasd"}]}
+      ]
+  },
+  {
+    "destinatio":"banglore",
+      "duration": [
+        {"packageName":"awal","details":[{"hotelName":"asdasd"}]},{"packageName":"sawal","details":[{"hotelName":"asdasd"}]}
+      ]
   }
 ]
